@@ -1,0 +1,12 @@
+{
+  "name": "Raj Ladies Tailor",
+  "short_name": "RLT",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf5",
+  "theme_color": "#c6a564",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
+
