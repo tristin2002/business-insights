@@ -1,375 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>RoyalForge Fitness Club</title>
-
-    <meta name="theme-color" content="#0a0b10" />
-    <meta name="description" content="RoyalForge Fitness Club – a premium, luxury fitness experience. Join now for elite training, exclusive classes, and world-class facilities." />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.22.0/tabler-icons.min.css" />
-
-    <!-- Swiper (carousels) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- GLightbox (gallery) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-  </head>
-  <body>
-    <!-- Premium Preloader -->
-    <div id="preloader" aria-hidden="true">
-      <div class="loader-logo">RoyalForge</div>
-      <div class="loader-bar"><span></span></div>
-    </div>
-
-    <!-- Motion Background (particles) -->
-    <div id="particles" aria-hidden="true"></div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raj Ladies Tailor - Expert women's tailoring, bridal stitching, and custom ethnic wear in Ahmedabad. Crafting elegance, one stitch at a time.">
+    <meta name="keywords" content="ladies tailor, women's tailor, bridal stitching, custom tailoring, ethnic wear, Ahmedabad, saree blouse, lehenga, salwar suit">
+    <meta name="author" content="Raj Shihora">
+    <title>Raj Ladies Tailor - Premium Women's Boutique Tailoring in Ahmedabad</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
     <!-- Navigation -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#home" class="logo">RoyalForge</a>
-        <button class="nav-toggle" aria-label="Open Menu"><i class="ti ti-menu-2"></i></button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li class="has-dropdown">
-            <a href="#about" class="nav-link">About</a>
-            <ul class="dropdown">
-              <li><a href="#about">Our Story</a></li>
-              <li><a href="#trainers">Trainers</a></li>
-              <li><a href="#facilities">Facilities</a></li>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Raj Ladies Tailor</h2>
+                <span class="tagline">Boutique Elegance</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-          </li>
-          <li><a href="#pricing" class="nav-link">Membership</a></li>
-          <li><a href="#classes" class="nav-link">Classes</a></li>
-          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <a href="#pricing" class="btn btn-gold btn-small cta-join">Join Now</a>
-      </nav>
-    </header>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Hero -->
-    <main id="home" class="hero">
-      <div class="hero-media">
-        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1920&auto=format&fit=crop">
-          <source src="https://cdn.coverr.co/videos/coverr-athletic-man-lifting-barbell-0616/1080p.mp4" type="video/mp4" />
-          <source src="https://cdn.coverr.co/videos/coverr-athletic-man-lifting-barbell-0616/720p.mp4" type="video/mp4" />
-        </video>
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="container hero-content">
-        <h1 class="headline"><span>Elite</span> Fitness. <span>Exclusive</span> Lifestyle.</h1>
-        <p class="subhead">Where performance meets luxury — crafted for the discerning athlete.</p>
-        <div class="hero-ctas">
-          <a href="#pricing" class="btn btn-gold btn-large">Join Now</a>
-          <a href="#contact" class="btn btn-outline btn-large">Book a Free Trial</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Crafting Elegance, One Stitch at a Time</h1>
+                <p>Welcome to Raj Ladies Tailor, where tradition meets contemporary fashion. We specialize in exquisite women's ethnic wear, bridal outfits, and custom tailoring that celebrates your unique style.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                    <a href="tel:+919876543210" class="btn btn-secondary">Request Callback</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-boutique.jpg" alt="Elegant women's boutique tailoring">
+            </div>
         </div>
-        <div id="hero-lottie" aria-hidden="true"></div>
-        <div class="scroll-indicator"><span></span></div>
-      </div>
-      <div class="parallax-mountains" aria-hidden="true"></div>
-    </main>
-
-    <!-- About -->
-    <section id="about" class="section about">
-      <div class="container grid two-col">
-        <div class="about-media">
-          <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1400&auto=format&fit=crop" alt="Luxury gym interior" />
+        <div class="hero-features">
+            <div class="feature-item">
+                <i class="fas fa-cut"></i>
+                <span>Expert Tailoring</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-heart"></i>
+                <span>Bridal Specialist</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-star"></i>
+                <span>Premium Quality</span>
+            </div>
         </div>
-        <div class="about-content">
-          <h2 class="section-title">The RoyalForge Philosophy</h2>
-          <p>We blend cutting-edge training with refined comfort. From curated classes to personalized coaching, every detail is designed to elevate your body and mind.</p>
-          <ul class="about-highlights">
-            <li><i class="ti ti-crown"></i> Bespoke programs tailored to your lifestyle</li>
-            <li><i class="ti ti-sparkles"></i> Spa-grade amenities and recovery lounges</li>
-            <li><i class="ti ti-shield-check"></i> World-class trainers and equipment</li>
-          </ul>
-          <div class="counters">
-            <div class="counter"><span data-counter="12">0</span><label>Years Experience</label></div>
-            <div class="counter"><span data-counter="3500">0</span><label>Active Members</label></div>
-            <div class="counter"><span data-counter="18">0</span><label>Premium Facilities</label></div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Membership Pricing -->
-    <section id="pricing" class="section pricing">
-      <div class="container">
-        <h2 class="section-title center">Membership Plans</h2>
-        <p class="section-subtitle center">Choose your path. Elevate your performance.</p>
-        <div class="pricing-grid">
-          <article class="price-card">
-            <h3>Basic</h3>
-            <p class="price"><span>$</span>59<span>/mo</span></p>
-            <ul>
-              <li>Gym floor access</li>
-              <li>Locker room</li>
-              <li>2 classes / week</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline glow">Get Started</a>
-          </article>
-          <article class="price-card featured">
-            <div class="badge">Most Popular</div>
-            <h3>Premium</h3>
-            <p class="price"><span>$</span>109<span>/mo</span></p>
-            <ul>
-              <li>Unlimited classes</li>
-              <li>Sauna & recovery</li>
-              <li>Trainer consults</li>
-            </ul>
-            <a href="#contact" class="btn btn-gold glow">Choose Premium</a>
-          </article>
-          <article class="price-card">
-            <h3>VIP</h3>
-            <p class="price"><span>$</span>249<span>/mo</span></p>
-            <ul>
-              <li>Private coaching</li>
-              <li>Concierge service</li>
-              <li>Exclusive lounge</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline glow">Join VIP</a>
-          </article>
+    <!-- Quick Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2>Our Signature Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Custom Ethnic Wear</h3>
+                    <p>Saree blouses, lehengas, salwar suits, and kurtis tailored to perfection</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Bridal & Wedding Wear</h3>
+                    <p>Exquisite bridal outfits and wedding collections for your special day</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <h3>Alterations & Fittings</h3>
+                    <p>Perfect adjustments and alterations for all women's garments</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Fabric Consultation</h3>
+                    <p>Expert guidance on premium fabric selection and styling</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Trainers -->
-    <section id="trainers" class="section trainers">
-      <div class="container">
-        <h2 class="section-title center">Meet Our Elite Trainers</h2>
-        <div class="trainers-grid">
-          <article class="trainer-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1594737625785-c6683fcfb1b1?q=80&w=1000&auto=format&fit=crop" alt="Trainer 1" />
-              <div class="hover-reveal">
-                <p>Strength & Conditioning specialist with 10+ years elevating athletes.</p>
-              </div>
+    <!-- Quick Testimonials -->
+    <section class="testimonials-preview">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Raj ji created the most beautiful bridal lehenga for my wedding. The attention to detail and craftsmanship was exceptional!"</p>
+                    <div class="client-info">
+                        <h4>Priya Sharma</h4>
+                        <span>Bride, 2024</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Perfect fitting every time! I've been coming here for 3 years and never been disappointed with the quality."</p>
+                    <div class="client-info">
+                        <h4>Meera Patel</h4>
+                        <span>Regular Client</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing work on my saree blouses! Raj ji understands exactly what I want and delivers beyond expectations."</p>
+                    <div class="client-info">
+                        <h4>Kavya Modi</h4>
+                        <span>Fashion Enthusiast</span>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-              <h3>Alex Morgan</h3>
-              <p>Strength & Conditioning</p>
-              <div class="socials">
-                <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
-              </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-          </article>
-          <article class="trainer-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a66?q=80&w=1000&auto=format&fit=crop" alt="Trainer 2" />
-              <div class="hover-reveal">
-                <p>Yoga & Mobility expert blending balance, breath, and flow.</p>
-              </div>
-            </div>
-            <div class="card-content">
-              <h3>Sophia Lee</h3>
-              <p>Yoga & Mobility</p>
-              <div class="socials">
-                <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
-              </div>
-            </div>
-          </article>
-          <article class="trainer-card">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1594737625785-c6683fcfb1b1?q=80&w=1000&auto=format&fit=crop" alt="Trainer 3" />
-              <div class="hover-reveal">
-                <p>HIIT & Metabolic conditioning coach for rapid transformation.</p>
-              </div>
-            </div>
-            <div class="card-content">
-              <h3>Diego Martínez</h3>
-              <p>HIIT & Metcon</p>
-              <div class="socials">
-                <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
-              </div>
-            </div>
-          </article>
         </div>
-      </div>
     </section>
 
-    <!-- Classes & Schedule -->
-    <section id="classes" class="section classes">
-      <div class="container">
-        <h2 class="section-title center">Classes & Schedule</h2>
-        <div class="filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="Yoga">Yoga</button>
-          <button class="filter-btn" data-filter="Strength">Strength</button>
-          <button class="filter-btn" data-filter="HIIT">HIIT</button>
-          <button class="filter-btn" data-filter="CrossFit">CrossFit</button>
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed">
+        <div class="container">
+            <h2>Follow Our Latest Work</h2>
+            <p>Stay updated with our recent creations on Instagram</p>
+            <div class="instagram-grid">
+                <!-- Placeholder for Instagram feed -->
+                <div class="insta-post">
+                    <img src="assets/images/insta-1.jpg" alt="Recent work">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-post">
+                    <img src="assets/images/insta-2.jpg" alt="Recent work">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-post">
+                    <img src="assets/images/insta-3.jpg" alt="Recent work">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-post">
+                    <img src="assets/images/insta-4.jpg" alt="Recent work">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-post">
+                    <img src="assets/images/insta-5.jpg" alt="Recent work">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-post">
+                    <img src="assets/images/insta-6.jpg" alt="Recent work">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="https://instagram.com/rajladiestailor" target="_blank" class="btn btn-outline">Follow @rajladiestailor</a>
         </div>
-        <div class="schedule-grid" id="schedule-grid">
-          <!-- Populated by JS -->
-        </div>
-      </div>
     </section>
 
-    <!-- Facilities Gallery -->
-    <section id="facilities" class="section facilities">
-      <div class="container">
-        <h2 class="section-title center">Facilities</h2>
-        <div class="gallery-grid">
-          <a href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop" class="glightbox" data-gallery="facilities"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop" alt="Gym 1" /></a>
-          <a href="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1600&auto=format&fit=crop" class="glightbox" data-gallery="facilities"><img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=600&auto=format&fit=crop" alt="Gym 2" /></a>
-          <a href="https://images.unsplash.com/photo-1517963628607-235ccdd5476b?q=80&w=1600&auto=format&fit=crop" class="glightbox" data-gallery="facilities"><img src="https://images.unsplash.com/photo-1517963628607-235ccdd5476b?q=80&w=600&auto=format&fit=crop" alt="Gym 3" /></a>
-          <a href="https://images.unsplash.com/photo-1546484959-fcc5ddae9b07?q=80&w=1600&auto=format&fit=crop" class="glightbox" data-gallery="facilities"><img src="https://images.unsplash.com/photo-1546484959-fcc5ddae9b07?q=80&w=600&auto=format&fit=crop" alt="Gym 4" /></a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Raj Ladies Tailor</h2>
+                    <div class="about-intro">
+                        <h3>The Journey of Raj Shihora</h3>
+                        <p>Welcome to Raj Ladies Tailor, where passion for fashion meets unparalleled craftsmanship. Founded by Raj Shihora, our boutique has been serving the women of Ahmedabad with exquisite tailoring services that blend traditional techniques with contemporary style.</p>
+                    </div>
+                    
+                    <div class="about-story">
+                        <h4>Our Story</h4>
+                        <p>With over 15 years of experience in women's fashion and tailoring, Raj Shihora started this boutique with a vision to create clothing that makes every woman feel confident, elegant, and beautiful. What began as a small tailoring shop has grown into Ahmedabad's trusted destination for premium women's ethnic wear and bridal fashion.</p>
+                        
+                        <p>Our expertise lies in understanding the unique needs of each client and translating their vision into perfectly crafted garments. From intricate bridal lehengas to everyday ethnic wear, we pay attention to every detail, ensuring that each piece reflects our commitment to quality and elegance.</p>
+                    </div>
+                    
+                    <div class="about-values">
+                        <h4>Our Values</h4>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <i class="fas fa-gem"></i>
+                                <h5>Quality Excellence</h5>
+                                <p>We use only the finest materials and techniques to ensure lasting beauty and comfort.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-heart"></i>
+                                <h5>Personal Touch</h5>
+                                <p>Every garment is crafted with personal attention and care for individual preferences.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-clock"></i>
+                                <h5>Timely Delivery</h5>
+                                <p>We respect your time and ensure all orders are completed within promised timelines.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-smile"></i>
+                                <h5>Customer Satisfaction</h5>
+                                <p>Your happiness with our work is our ultimate measure of success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/raj-shihora.jpg" alt="Raj Shihora - Master Tailor">
+                    <div class="image-caption">
+                        <h4>Raj Shihora</h4>
+                        <p>Master Tailor & Boutique Owner</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section testimonials">
-      <div class="container">
-        <h2 class="section-title center">What Members Say</h2>
-        <div class="swiper testimonial-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide testimonial">
-              <div class="stars">★★★★★</div>
-              <p>RoyalForge transformed my routine. The ambience and coaching are unmatched.</p>
-              <div class="user"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&auto=format&fit=crop" alt="User" /><span>Amelia R.</span></div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Services</h2>
+                <p>Comprehensive tailoring solutions for the modern woman</p>
             </div>
-            <div class="swiper-slide testimonial">
-              <div class="stars">★★★★★</div>
-              <p>From recovery lounge to classes, everything feels premium and purposeful.</p>
-              <div class="user"><img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop" alt="User" /><span>Marcus D.</span></div>
+            
+            <div class="services-detailed">
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="assets/images/ethnic-wear.jpg" alt="Custom Ethnic Wear">
+                    </div>
+                    <div class="service-content">
+                        <h3>Custom Ethnic Wear Stitching</h3>
+                        <p>Specializing in traditional and contemporary ethnic wear that celebrates Indian femininity and grace.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Saree Blouses - Designer and traditional styles</li>
+                            <li><i class="fas fa-check"></i> Lehengas - Party wear and festive collections</li>
+                            <li><i class="fas fa-check"></i> Salwar Suits - Punjabi, Anarkali, and straight cuts</li>
+                            <li><i class="fas fa-check"></i> Kurtis & Tunics - Casual and formal designs</li>
+                            <li><i class="fas fa-check"></i> Indo-Western Gowns - Fusion wear</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Starting from ₹800</span>
+                            <span class="duration">7-10 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item reverse">
+                    <div class="service-image">
+                        <img src="assets/images/bridal-wear.jpg" alt="Bridal & Wedding Wear">
+                    </div>
+                    <div class="service-content">
+                        <h3>Bridal & Wedding Wear Design</h3>
+                        <p>Creating dream wedding outfits that make your special day unforgettable with intricate designs and premium craftsmanship.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Bridal Lehengas - Heavy embroidered and designer pieces</li>
+                            <li><i class="fas fa-check"></i> Wedding Gowns - Traditional and contemporary styles</li>
+                            <li><i class="fas fa-check"></i> Reception Outfits - Elegant and glamorous designs</li>
+                            <li><i class="fas fa-check"></i> Engagement Dresses - Sophisticated and chic</li>
+                            <li><i class="fas fa-check"></i> Trousseau Collection - Complete bridal wardrobe</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Starting from ₹5,000</span>
+                            <span class="duration">15-21 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="assets/images/alterations.jpg" alt="Alterations & Fittings">
+                    </div>
+                    <div class="service-content">
+                        <h3>Alterations & Perfect Fittings</h3>
+                        <p>Expert alteration services to ensure your garments fit perfectly and enhance your silhouette.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Size Adjustments - Taking in or letting out</li>
+                            <li><i class="fas fa-check"></i> Length Modifications - Hemming and extending</li>
+                            <li><i class="fas fa-check"></i> Style Updates - Modernizing older garments</li>
+                            <li><i class="fas fa-check"></i> Repair Work - Fixing tears, zippers, and buttons</li>
+                            <li><i class="fas fa-check"></i> Restyling - Converting one style to another</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Starting from ₹200</span>
+                            <span class="duration">2-5 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item reverse">
+                    <div class="service-image">
+                        <img src="assets/images/fabric-consultation.jpg" alt="Fabric Consultation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Premium Fabric Consultation</h3>
+                        <p>Expert guidance on fabric selection, styling advice, and design consultation to bring your vision to life.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Fabric Selection - Choosing the right materials</li>
+                            <li><i class="fas fa-check"></i> Design Consultation - Style and pattern advice</li>
+                            <li><i class="fas fa-check"></i> Color Coordination - Perfect color combinations</li>
+                            <li><i class="fas fa-check"></i> Trend Guidance - Latest fashion trends</li>
+                            <li><i class="fas fa-check"></i> Care Instructions - Maintaining your garments</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Complimentary</span>
+                            <span class="duration">With service</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide testimonial">
-              <div class="stars">★★★★★</div>
-              <p>World-class trainers who truly listen. Results came faster than ever.</p>
-              <div class="user"><img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop" alt="User" /><span>Priya K.</span></div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" class="section blog">
-      <div class="container">
-        <h2 class="section-title center">Insights & Articles</h2>
-        <div class="blog-grid">
-          <article class="post">
-            <a href="#" class="post-media"><img src="https://images.unsplash.com/photo-1517638851339-4aa32003c11a?q=80&w=900&auto=format&fit=crop" alt="Nutrition" /></a>
-            <div class="post-content">
-              <h3><a href="#">Fuel Like Royalty: Premium Nutrition Guide</a></h3>
-              <p>Elevate your plate with smart macros and recovery-forward meals.</p>
-              <a href="#" class="read-more">Read More</a>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Showcasing our finest creations and craftsmanship</p>
             </div>
-          </article>
-          <article class="post">
-            <a href="#" class="post-media"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=900&auto=format&fit=crop" alt="Strength" /></a>
-            <div class="post-content">
-              <h3><a href="#">Strength Sculpt: Elite Training Principles</a></h3>
-              <p>Leverage periodization and tempo work for sustainable gains.</p>
-              <a href="#" class="read-more">Read More</a>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="bridal">Bridal Wear</button>
+                <button class="filter-btn" data-filter="partywear">Party Wear</button>
+                <button class="filter-btn" data-filter="casual">Casual Ethnic</button>
             </div>
-          </article>
-          <article class="post">
-            <a href="#" class="post-media"><img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=900&auto=format&fit=crop" alt="Recovery" /></a>
-            <div class="post-content">
-              <h3><a href="#">Recovery Rituals: Sleep, Sauna, and Mobility</a></h3>
-              <p>Optimize your recovery stack for long-term performance.</p>
-              <a href="#" class="read-more">Read More</a>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item bridal">
+                    <img src="assets/images/gallery/bridal-1.jpg" alt="Bridal Lehenga">
+                    <div class="gallery-overlay">
+                        <h4>Bridal Lehenga</h4>
+                        <p>Heavy embroidered red lehenga</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item bridal">
+                    <img src="assets/images/gallery/bridal-2.jpg" alt="Wedding Gown">
+                    <div class="gallery-overlay">
+                        <h4>Wedding Gown</h4>
+                        <p>Elegant white wedding gown</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item partywear">
+                    <img src="assets/images/gallery/party-1.jpg" alt="Designer Saree Blouse">
+                    <div class="gallery-overlay">
+                        <h4>Designer Blouse</h4>
+                        <p>Intricate beadwork saree blouse</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item partywear">
+                    <img src="assets/images/gallery/party-2.jpg" alt="Party Lehenga">
+                    <div class="gallery-overlay">
+                        <h4>Party Lehenga</h4>
+                        <p>Sequined party wear lehenga</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item casual">
+                    <img src="assets/images/gallery/casual-1.jpg" alt="Cotton Kurti">
+                    <div class="gallery-overlay">
+                        <h4>Cotton Kurti</h4>
+                        <p>Comfortable daily wear kurti</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item casual">
+                    <img src="assets/images/gallery/casual-2.jpg" alt="Salwar Suit">
+                    <div class="gallery-overlay">
+                        <h4>Salwar Suit</h4>
+                        <p>Traditional Punjabi suit</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item bridal">
+                    <img src="assets/images/gallery/bridal-3.jpg" alt="Reception Dress">
+                    <div class="gallery-overlay">
+                        <h4>Reception Dress</h4>
+                        <p>Glamorous reception outfit</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item partywear">
+                    <img src="assets/images/gallery/party-3.jpg" alt="Indo-Western Gown">
+                    <div class="gallery-overlay">
+                        <h4>Indo-Western Gown</h4>
+                        <p>Fusion wear evening gown</p>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
             </div>
-          </article>
         </div>
-      </div>
     </section>
 
-    <!-- Contact & Location -->
-    <section id="contact" class="section contact">
-      <div class="container grid two-col">
-        <div class="contact-form">
-          <h2 class="section-title">Get In Touch</h2>
-          <form id="contactForm" novalidate>
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Reviews</h2>
+                <p>Hear from our satisfied customers</p>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="assets/images/clients/client-1.jpg" alt="Priya Sharma">
+                        <div class="client-details">
+                            <h4>Priya Sharma</h4>
+                            <span>Bride, 2024</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Raj ji created the most beautiful bridal lehenga for my wedding. The attention to detail and craftsmanship was exceptional! Every stitch was perfect, and I felt like a princess on my special day. Highly recommend for bridal wear!"</p>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="assets/images/clients/client-2.jpg" alt="Meera Patel">
+                        <div class="client-details">
+                            <h4>Meera Patel</h4>
+                            <span>Regular Client</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Perfect fitting every time! I've been coming here for 3 years and never been disappointed with the quality. Raj ji understands my style preferences and always delivers beyond expectations. The best ladies tailor in Ahmedabad!"</p>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="assets/images/clients/client-3.jpg" alt="Kavya Modi">
+                        <div class="client-details">
+                            <h4>Kavya Modi</h4>
+                            <span>Fashion Enthusiast</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Amazing work on my saree blouses! Raj ji has an eye for detail and creates unique designs that perfectly complement my style. The fabric consultation service is also very helpful. Truly a boutique experience!"</p>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="assets/images/clients/client-4.jpg" alt="Anita Desai">
+                        <div class="client-details">
+                            <h4>Anita Desai</h4>
+                            <span>Working Professional</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Excellent alteration services! They fixed my ill-fitting outfits perfectly. The turnaround time is quick and the pricing is very reasonable. Great customer service and professional approach."</p>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="assets/images/clients/client-5.jpg" alt="Ritu Agarwal">
+                        <div class="client-details">
+                            <h4>Ritu Agarwal</h4>
+                            <span>Bride's Mother</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Got my daughter's entire trousseau stitched here. The quality and craftsmanship is outstanding! Raj ji was very patient with our requirements and delivered everything on time. Highly satisfied with the service."</p>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="assets/images/clients/client-6.jpg" alt="Shreya Joshi">
+                        <div class="client-details">
+                            <h4>Shreya Joshi</h4>
+                            <span>Fashion Designer</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"As a fashion designer, I appreciate good craftsmanship. Raj Ladies Tailor exceeds expectations with their attention to detail and finishing. They understand the nuances of women's fashion perfectly."</p>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us your goals" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold glow">Send Message</button>
-            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-          </form>
         </div>
-        <div class="map-wrap">
-          <h2 class="section-title">Find Us</h2>
-          <div class="map-embed">
-            <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509403!2d144.95373631547865!3d-37.817209979751834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAyLjAiUyAxNDTCsDU3JzE0LjQiRQ!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to create your perfect outfit? Let's discuss your requirements</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Our Boutique</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Shop No. 15, Fashion Plaza,<br>
+                            Satellite Road, Ahmedabad,<br>
+                            Gujarat - 380015</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            <p><a href="tel:+917923456789">079 2345 6789</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@rajladiestailor.com">info@rajladiestailor.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Saturday: 10:00 AM - 8:00 PM<br>
+                            Sunday: 11:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/rajladiestailor" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/rajladiestailor" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Book Your Appointment</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="custom-ethnic">Custom Ethnic Wear</option>
+                                <option value="bridal">Bridal & Wedding Wear</option>
+                                <option value="alterations">Alterations & Fittings</option>
+                                <option value="consultation">Fabric Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your requirements..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0826081655!2d72.5194!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzEnMDkuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a href="#home" class="logo">RoyalForge</a>
-          <p>Elite fitness. Elevated living.</p>
-          <div class="socials">
-            <a href="#" aria-label="Instagram" class="glow"><i class="ti ti-brand-instagram"></i></a>
-            <a href="#" aria-label="X" class="glow"><i class="ti ti-brand-x"></i></a>
-            <a href="#" aria-label="YouTube" class="glow"><i class="ti ti-brand-youtube"></i></a>
-          </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Raj Ladies Tailor</h3>
+                    <p>Crafting elegance, one stitch at a time. Your trusted boutique for premium women's tailoring in Ahmedabad.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/rajladiestailor" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/rajladiestailor" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Custom Ethnic Wear</li>
+                        <li>Bridal & Wedding Wear</li>
+                        <li>Alterations & Fittings</li>
+                        <li>Fabric Consultation</li>
+                        <li>Designer Blouses</li>
+                        <li>Party Wear</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop No. 15, Fashion Plaza, Satellite Road, Ahmedabad</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@rajladiestailor.com">info@rajladiestailor.com</a></p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 10AM-8PM, Sun: 11AM-6PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Raj Ladies Tailor. All rights reserved. | Designed with ❤️ for women's fashion</p>
+            </div>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#pricing">Membership</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#trainers">Trainers</a></li>
-          </ul>
-        </div>
-        <div class="footer-newsletter">
-          <h4>Newsletter</h4>
-          <form id="newsletterForm">
-            <input type="email" id="newsletterEmail" placeholder="Your email" required />
-            <button class="btn btn-outline glow" type="submit">Subscribe</button>
-          </form>
-          <p id="newsletterStatus" class="form-status" role="status" aria-live="polite"></p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© <span id="year"></span> RoyalForge Fitness Club. All rights reserved.</p>
-      </div>
     </footer>
 
-    <!-- Vendor scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hi! I'm interested in your tailoring services. Can we discuss my requirements?" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with us</span>
+        </a>
+    </div>
 
-    <!-- App script -->
-    <script src="/assets/js/main.js"></script>
-  </body>
-  </html>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
